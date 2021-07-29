@@ -1,0 +1,43 @@
+{% extends 'base.html' %}{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<style>
+    form
+    {
+        padding-top: 7%;
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+</style>
+<main class="form-signin text-center">
+    <form method="POST">
+        <h3 class="h3 mb-3 fw-normal">Sign Up</h3>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="email" name="email" placeholder="abc@mail.com">
+            <label for="floatingInput email">Email Address</label>
+        </div>
+        <br/>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+            <label for="floatingInput firstname">First Name</label>
+        </div>
+        <br/>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+            <label for="floatingInput lastname">Last Name</label>
+        </div>
+        <br/>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password1" name="password1" placeholder="*******">
+            <label for="floatingInput password1">Password</label>
+        </div>
+        <br/>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="*******">
+            <label for="floatingInput password2">Re-Confirm Password</label>
+        </div>
+        <br/>
+        <button class="w-100 btn btn-lg btn-outline-primary" type="submit">Submit</button>
+    </form>
+</main>
+{% endblock %}
